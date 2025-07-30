@@ -1,0 +1,33 @@
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f6faf7;
+}
+
+.dashboard-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.dashboard-row {
+  display: flex;
+  gap: 32px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(60, 180, 80, 0.08);
+  padding: 24px;
+  flex: 1;
+  min-width: 280px;
+}

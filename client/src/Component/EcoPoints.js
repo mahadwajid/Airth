@@ -1,20 +1,18 @@
 import React from 'react';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import LinearProgress from '@mui/material/LinearProgress';
+import './EcoPoints.css';
 
-export default function EcoPoints({ points }) {
-  // Assume 200 points needed for next badge
-  const progress = Math.min((points / 200) * 100, 100);
-  return (
-    <Box>
-      <Typography variant="subtitle1" gutterBottom>
-        Eco-Points: {points}
-      </Typography>
-      <LinearProgress variant="determinate" value={progress} sx={{ height: 10, borderRadius: 5 }} />
-      <Typography variant="caption" color="text.secondary">
-        {200 - points} points to next badge
-      </Typography>
-    </Box>
-  );
-}
+const EcoPoints = () => (
+  <div className="card ecopoints-card">
+    <h2>EcoPoints</h2>
+    <p>Points: 120</p>
+    <p>Badges: 🌱 🌳 🚴</p>
+    <h3>Leaderboard</h3>
+    <ol>
+      <li>Alice - 200</li>
+      <li>Bob - 150</li>
+      <li>You - 120</li>
+    </ol>
+  </div>
+);
+
+export default EcoPoints;

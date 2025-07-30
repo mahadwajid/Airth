@@ -1,0 +1,17 @@
+.ecopoints-card h2 {
+  color: #2ecc7a;
+  margin-bottom: 12px;
+}
+
+.ecopoints-card p {
+  margin: 8px 0;
+}
+
+.ecopoints-card ol {
+  margin: 12px 0 0 20px;
+  padding: 0;
+}
+
+.ecopoints-card li {
+  margin-bottom: 4px;
+}

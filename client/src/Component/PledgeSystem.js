@@ -1,25 +1,18 @@
-import React, { useState } from 'react';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import Box from '@mui/material/Box';
+import React from 'react';
+import './PledgeSystem.css';
 
-export default function PledgeSystem() {
-  const [joined, setJoined] = useState(false);
-  return (
-    <Box textAlign="center">
-      <Typography variant="h6" gutterBottom>
-        Community Pledge System
-      </Typography>
-      <Typography variant="body2" color="text.secondary" gutterBottom>
-        Join eco-pledges, earn badges, and see the leaderboard!
-      </Typography>
-      <Button
-        variant={joined ? 'outlined' : 'contained'}
-        color="primary"
-        onClick={() => setJoined(j => !j)}
-      >
-        {joined ? 'Leave Pledge' : 'Join Pledge'}
-      </Button>
-    </Box>
-  );
-}
+const PledgeSystem = () => (
+  <div className="card pledge-card">
+    <h2>Community Pledge System</h2>
+    <p>Join a pledge to reduce pollution and earn eco-points!</p>
+    <button className="join-pledge-btn">Join Pledge</button>
+    <div className="pledge-progress">
+      <p>Community Progress: 65%</p>
+      <div className="progress-bar">
+        <div className="progress" style={{width: '65%'}}></div>
+      </div>
+    </div>
+  </div>
+);
+
+export default PledgeSystem;

@@ -1,0 +1,14 @@
+.suggestions-card h2 {
+  color: #2ecc7a;
+  margin-bottom: 12px;
+}
+
+.suggestions-card ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.suggestions-card li {
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}

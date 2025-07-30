@@ -1,0 +1,5 @@
+city,aqi,timestamp
+New York,42,2024-06-01T10:00:00Z
+London,55,2024-06-01T10:00:00Z
+Delhi,120,2024-06-01T10:00:00Z
+Beijing,130,2024-06-01T10:00:00Z
